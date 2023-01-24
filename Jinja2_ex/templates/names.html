@@ -1,0 +1,10 @@
+<!-- Файл names.html -->
+{% extends 'base.html' %}
+
+{% block title %}Список пользователей{% endblock %}
+
+{% block content %}
+{% for name in entities %}
+<p>{{ name.name }}</p>
+{% endfor %}
+{% endblock %}
